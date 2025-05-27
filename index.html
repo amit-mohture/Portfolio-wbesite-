@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF -8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skills From Amit</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Amit's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" id="homelink">Home</a></li>
+                    <li><a href="#" id="skillslink">Skills</a></li>
+                    <li><a href="#"id="projectlink">Projects</a></li>
+                    <li><a href="#"id="contactlink">Contact</a></li>
+                    <li><a href="#"id="CloseTabslink">CloseTabs</a></li>
+                </ul>
+            </nav>
+            <div id="slidepanel">👌 You're already home, stop pressing it like a doorbell! (press Other buttons🤧!)</div>
+            <script>document.getElementById("homelink").addEventListener("click", function (e){
+                e.preventDefault();
+                document.getElementById("slidepanel").classList.toggle("active");
+            });
+
+            </script>
+           <div id="slidepanel2">
+  <h2 class="skills-title">💼 Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-card">
+      <h4>💻 Programming & Development</h4>
+      <ul>
+        <li><strong>Languages:</strong> Python, R, JavaScript, HTML, CSS, SQL</li>
+        <li><strong>Backend:</strong> Node.js, Express.js</li>
+        <li><strong>Mobile App Development:</strong> Flutter, Android (Java/Kotlin)</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h4>📊 Data & Analytics</h4>
+      <ul>
+        <li><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL</li>
+        <li><strong>Visualization:</strong> Power BI, Tableau, Matplotlib, Seaborn</li>
+        <li><strong>Handling:</strong> Pandas, NumPy, Excel</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h4>🤖 AI & Machine Learning</h4>
+      <ul>
+        <li><strong>Core Areas:</strong> ML, DL, NLP</li>
+        <li><strong>Frameworks:</strong> Scikit-learn, TensorFlow, Keras, OpenCV</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h4>☁️ Cloud & DevOps</h4>
+      <ul>
+        <li><strong>Platforms:</strong> AWS, GCP</li>
+        <li><strong>Version Control:</strong> Git, GitHub</li>
+        <li><strong>Workflow:</strong> Agile, CI/CD</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h4>🚀 Other Skills</h4>
+      <ul>
+        <li>Critical thinking & problem solving</li>
+        <li>Open-source enthusiast</li>
+        <li>Quick learner & team player</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+            <script>document.getElementById("skillslink").addEventListener("click", function (e){
+                e.preventDefault();
+                document.getElementById("slidepanel2").classList.toggle("active");
+            });
+            </script>
+            <div id="slidepanel3">
+  <h2 class="skills-title">📁 Projects</h2>
+  <div class="skills-container">
+
+    <div class="skill-card">
+      <h4>📧 Email Fraud Detection</h4>
+      <ul>
+        <li><strong>Tech Used:</strong> Machine Learning, Python</li>
+        <li><strong>Description:</strong> Classifies and identifies phishing/spam emails to enhance email security.</li>
+        <li><strong>Impact:</strong> Improves fraud detection accuracy and reduces false positives.</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h4>💬 Sentiment Analysis</h4>
+      <ul>
+        <li><strong>Tech Used:</strong> NLP, Python</li>
+        <li><strong>Description:</strong> Analyzes front page data to classify emotions and opinions.</li>
+        <li><strong>Impact:</strong> Helps in understanding people's sentiments for better business decisions.</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h4>👨‍💻 Portfolio Website</h4>
+      <ul>
+        <li><strong>Tech Used:</strong>Html,css,JavaScript</li>
+        <li><strong>Description:</strong> Created a portfolio website.</li>
+        <li><strong>Impact:</strong> A portfolio website turns your resume into a real experience — it proves, presents, and promotes my capabilities.</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+  <h4>📊 Data Analysis & Visualization with Power BI</h4>
+  <ul>
+    <li><strong>Tool Used:</strong> Power BI</li>
+    <li><strong>Skills:</strong> Data cleaning, DAX formulas, visual storytelling</li>
+    <li><strong>Project:</strong> Created interactive dashboards to analyze sales, trends, and KPIs</li>
+    <li><strong>Impact:</strong> Improved decision-making by converting raw data into clear business insights</li>
+  </ul>
+</div>
+
+  </div>
+</div>
+        
+            <script>document.getElementById("projectlink").addEventListener("click", function (e){
+                e.preventDefault();
+                document.getElementById("slidepanel3").classList.toggle("active");
+            });
+            </script>
+            <div id="slidepanel4">
+  <h2>📞 Contact Me</h2>
+  <ul class="contact-list">
+    <li><strong>📱 Mobile:</strong> <a href="tel:+919347443645">+91 93474 43645</a></li>
+    <li><strong>📧 Email:</strong> <a href="mailto:amitmohture7350@gmail.com">amitmohture7350@gmail.com</a></li>
+    <li><strong>📷 Instagram:</strong> <a href="https://www.instagram.com/_.amit.m._?igsh=aXltMjR3Z2hhb21i" target="_blank">@amit.m.</a></li>
+    <li><strong>🔗 LinkedIn:</strong> <a href="www.linkedin.com/in/amit-mohture" target="_blank">amit-mohture</a></li>
+  </ul>
+</div>
+            <script>document.getElementById("contactlink").addEventListener("click", function (e){
+                e.preventDefault();
+                document.getElementById("slidepanel4").classList.toggle("active");
+            });
+            </script>
+            <script>
+    document.getElementById("CloseTabslink").addEventListener("click", function () {
+        document.querySelectorAll('#slidepanel, #slidepanel2, #slidepanel3, #slidepanel4')
+            .forEach(panel => panel.classList.remove("active"));
+    });
+</script>
+
+
+        </header>
+        <main>
+            <section class="Intro">
+                <h2> WELCOME!</h2>
+                <p>Building digital experiences with precision, purpose, and passion.</p><br>
+                <h3></h3><br>
+            <div class="work-gallery">
+                <img src="C:\Users\ASUS\Downloads\carimage.jpg" alt="Project 1">
+                <img src="C:\Users\ASUS\Downloads\car.jpg" alt="Project 2">
+                <img src="C:\Users\ASUS\Downloads\download (1).jpg" alt="Project 3">
+                <img src="C:\Users\ASUS\Downloads\download.jpg" alt="Project 4">
+            </div>
+            </section>
+        </main>
+        <footer>
+            <p>@Amit; 2025 My Website.</p>
+        </footer>
+    </body>
+</html>
